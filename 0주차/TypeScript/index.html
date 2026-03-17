@@ -9,13 +9,13 @@
 
     <!-- JS 파일 업로드 -->
     <!-- defer는 JS 파일을 문서 앞에 쓰되 읽는건 문서를 전부 읽은 뒤에 읽으라는 뜻 -->
-    <script type="./dist/script.js" defer></script> 
+    <script type="module" src="./dist/script.js" defer></script> 
 
     <title>UMC TODO</title>
 </head>
 <body>
     <div class="todo-container">
-        <h1 class="todo-container__header">HONG TODO</h1>
+        <h1 class="todo-container__header">YEONI TODO</h1>
         <form id="todo-form" class="todo-container__form" >
             <input 
             type="text" 
@@ -31,11 +31,15 @@
             <div class="render-container__section">
                 <h2 class="render-container__title">할 일</h2>
                 <ul id="todo-list" class="render-container__list">
+                    <!-- <li class="render-container__item">
+                        <p class="render-container__item_text">123</p>
+                        <button class="render-container__item-button">삭제</button>
+                    </li> -->
                 </ul>
             </div>
             <div class="render-container__section">
                 <h2 class="render-container__title">완료</h2>
-                <ul id="todo-list" class="render-container__list"></ul>
+                <ul id="done-list" class="render-container__list"></ul>
             </div>
         </div>
     </div>
